@@ -2,10 +2,9 @@
 // AppDelegate.swift 
 // SwiftDemo 
 // 
-// Created by Linzy on 2019/1/21. 
-// Copyright © 2018年 Gosuncn. All rights reserved.
+// Created by Plena on 2019/1/21.
+// Copyright © 2019 Linzy. All rights reserved.
 // 
-
 
 import UIKit
 
@@ -17,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.window = UIWindow.init(frame: UIScreen.main.bounds);
+        let rootVC = IndexViewController();
+        let navVC = UINavigationController(rootViewController: rootVC);
+        self.window?.rootViewController = navVC;
+        self.window?.makeKeyAndVisible();
         return true
     }
 

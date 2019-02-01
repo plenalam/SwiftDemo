@@ -2,8 +2,8 @@
 // SwiftDemoUITests.swift 
 // SwiftDemoUITests 
 // 
-// Created by Linzy on 2019/1/21. 
-// Copyright © 2018年 Gosuncn. All rights reserved.
+// Created by Plena on 2019/1/21. 
+// Copyright © 2019 Linzy. All rights reserved.
 // 
 
 
