@@ -24,8 +24,6 @@ extension UserService : TargetType{
     }
     var method : Moya.Method{
         switch self {
-        case .getUserList:
-            return .post;
         default:
             return .get
         }

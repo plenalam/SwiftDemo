@@ -91,15 +91,15 @@ class LoginViewModel {
             return loginTapSubject.onNext(Result.failure(NSError(domain: "1", code: 1, userInfo: [NSLocalizedDescriptionKey:"密码不能为空"])))
         }
 
-        provider.rx.requestWithProgress(.LoginRequest(username: usernameVar.value, password: passwordVar.value))
+        provider.rx.request(.LoginRequest(username: usernameVar.value, password: passwordVar.value))
             .trackActivity(signingIn)
             .subscribe { [weak self] (event) in
             switch event {
-            case .next(let progressResponse):
-                guard let response = progressResponse.response else {
-                   //  self?.loginTapSubject.onNext(Result.failure(NSError(domain: "1", code: 1, userInfo: [NSLocalizedDescriptionKey:"返回值为空"])))
-                    return
-                }
+            case .next(let response):
+//                guard let data = response.data else {
+//                    self?.loginTapSubject.onNext(Result.failure(NSError(domain: "1", code: 1, userInfo: [NSLocalizedDescriptionKey:"返回值为空"])))
+//                    return
+//                }
                 self?.loginTapSubject.onNext(Result<String>.success("\(response.data)"))
             case .error(let error):
                 self?.loginTapSubject.onNext(Result.failure(NSError(domain: "1", code: 1, userInfo: [NSLocalizedDescriptionKey:error.localizedDescription])))

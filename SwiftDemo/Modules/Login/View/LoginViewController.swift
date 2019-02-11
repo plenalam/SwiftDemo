@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
         self.setUpUI();
         self.setUpBinding();
     }
-
+    
     //MARK:UI
     let loginBtn = UIButton(type: .system);
     let logBtn = UIButton(type: .system);

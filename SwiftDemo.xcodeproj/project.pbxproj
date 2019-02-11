@@ -23,6 +23,9 @@
 		F41A6A652202FE3B00D59A2C /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A6A642202FE3B00D59A2C /* IndexViewController.swift */; };
 		F444094B21F8049200BF8C01 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F444094A21F8049200BF8C01 /* LoginService.swift */; };
 		F444094E21F80C0300BF8C01 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F444094D21F80C0300BF8C01 /* LoginViewController.swift */; };
+		F44647A32203EB3600D3BDD5 /* UserBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44647A22203EB3600D3BDD5 /* UserBean.swift */; };
+		F44647A52203F43C00D3BDD5 /* UserTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44647A42203F43C00D3BDD5 /* UserTableViewModel.swift */; };
+		F44647A7220425A800D3BDD5 /* UserInfoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44647A6220425A800D3BDD5 /* UserInfoTableCell.swift */; };
 		F4DA457E220042F400E80A5A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA457D220042F400E80A5A /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +75,9 @@
 		F41A6A642202FE3B00D59A2C /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		F444094A21F8049200BF8C01 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		F444094D21F80C0300BF8C01 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F44647A22203EB3600D3BDD5 /* UserBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBean.swift; sourceTree = "<group>"; };
+		F44647A42203F43C00D3BDD5 /* UserTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewModel.swift; sourceTree = "<group>"; };
+		F44647A6220425A800D3BDD5 /* UserInfoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableCell.swift; sourceTree = "<group>"; };
 		F4DA457D220042F400E80A5A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +185,8 @@
 		F41A6A4D2202EB1800D59A2C /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F44647A12203EB2A00D3BDD5 /* Bean */,
+				F44647A02203EB1A00D3BDD5 /* ViewModel */,
 				F41A6A602202FA6200D59A2C /* Store */,
 				F41A6A4E2202EB3C00D59A2C /* View */,
 			);
@@ -189,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				F41A6A5E2202F82100D59A2C /* UserTableViewController.swift */,
+				F44647A6220425A800D3BDD5 /* UserInfoTableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,6 +252,22 @@
 				F444094D21F80C0300BF8C01 /* LoginViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F44647A02203EB1A00D3BDD5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F44647A42203F43C00D3BDD5 /* UserTableViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F44647A12203EB2A00D3BDD5 /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				F44647A22203EB3600D3BDD5 /* UserBean.swift */,
+			);
+			path = Bean;
 			sourceTree = "<group>";
 		};
 		F4DA457C22003A6900E80A5A /* ViewModel */ = {
@@ -503,6 +528,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
@@ -517,6 +543,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
@@ -541,9 +568,12 @@
 				F41A6A5F2202F82100D59A2C /* UserTableViewController.swift in Sources */,
 				F41A6A622202FA7300D59A2C /* UserService.swift in Sources */,
 				F41A6A592202F6C400D59A2C /* Operators.swift in Sources */,
+				F44647A52203F43C00D3BDD5 /* UserTableViewModel.swift in Sources */,
 				F444094B21F8049200BF8C01 /* LoginService.swift in Sources */,
 				F4DA457E220042F400E80A5A /* LoginViewModel.swift in Sources */,
+				F44647A32203EB3600D3BDD5 /* UserBean.swift in Sources */,
 				F41A6A5B2202F6C400D59A2C /* ActivityIndicator.swift in Sources */,
+				F44647A7220425A800D3BDD5 /* UserInfoTableCell.swift in Sources */,
 				F4189C5621F5621800E07CF6 /* AppDelegate.swift in Sources */,
 				F41A6A652202FE3B00D59A2C /* IndexViewController.swift in Sources */,
 			);

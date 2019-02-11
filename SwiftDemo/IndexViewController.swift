@@ -11,7 +11,7 @@ import Foundation
 import UIKit
 
 class IndexViewController : UIViewController,UITableViewDelegate,UITableViewDataSource {
-    let datasource = ["Login MVVM","TableView"]
+    let datasource = ["Login MVVM","TableView MMVM"]
     let CELLID = "cellid"
     
     override func viewDidLoad() {
