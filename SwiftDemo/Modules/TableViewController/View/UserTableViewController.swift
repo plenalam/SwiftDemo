@@ -33,6 +33,12 @@ class UserTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         userTableview.dataSource = self
         userTableview.delegate = self
         userTableview.register(UserInfoTableCell.self, forCellReuseIdentifier: CELLID)
+        userTableview.rx.itemSelected
+            .map { [weak self] indexPath in
+                return self?.viewModel.datasource[indexPath.row]
+            }.subscribe(onNext:{ cellModel in
+            })
+        .disposed(by: disposeBag)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

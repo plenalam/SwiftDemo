@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "SwiftTest";
+        self.navigationItem.title = "Login";
         // Do any additional setup after loading the view, typically from a nib.
         self.setUpUI();
         self.setUpBinding();

@@ -26,7 +26,15 @@
 		F44647A32203EB3600D3BDD5 /* UserBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44647A22203EB3600D3BDD5 /* UserBean.swift */; };
 		F44647A52203F43C00D3BDD5 /* UserTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44647A42203F43C00D3BDD5 /* UserTableViewModel.swift */; };
 		F44647A7220425A800D3BDD5 /* UserInfoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44647A6220425A800D3BDD5 /* UserInfoTableCell.swift */; };
-		F4DA457E220042F400E80A5A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA457D220042F400E80A5A /* LoginViewModel.swift */; };
+		F4835956221299970001C0FE /* TokenRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4835955221299970001C0FE /* TokenRefresher.swift */; };
+		F483595C2212B2FB0001C0FE /* NetWorkBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483595B2212B2FB0001C0FE /* NetWorkBusinessViewController.swift */; };
+		F483595E2212B30D0001C0FE /* NetWorkBusnissViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483595D2212B30D0001C0FE /* NetWorkBusnissViewModel.swift */; };
+		F48359612212BDB20001C0FE /* CommonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48359602212BDB20001C0FE /* CommonService.swift */; };
+		F48359652212C6E70001C0FE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48359642212C6E70001C0FE /* Result.swift */; };
+		F4EAAD6A2211507D001A8EFB /* NetOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAAD692211507D001A8EFB /* NetOperators.swift */; };
+		F4EAAD6C22115C50001A8EFB /* BaseJsonResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAAD6B22115C50001A8EFB /* BaseJsonResult.swift */; };
+		F4EAAD6E22115EB3001A8EFB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAAD6D22115EB3001A8EFB /* LoginViewModel.swift */; };
+		F4EAAD7022117ABB001A8EFB /* NetWorkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAAD6F22117ABB001A8EFB /* NetWorkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +86,15 @@
 		F44647A22203EB3600D3BDD5 /* UserBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBean.swift; sourceTree = "<group>"; };
 		F44647A42203F43C00D3BDD5 /* UserTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewModel.swift; sourceTree = "<group>"; };
 		F44647A6220425A800D3BDD5 /* UserInfoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableCell.swift; sourceTree = "<group>"; };
-		F4DA457D220042F400E80A5A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F4835955221299970001C0FE /* TokenRefresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRefresher.swift; sourceTree = "<group>"; };
+		F483595B2212B2FB0001C0FE /* NetWorkBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkBusinessViewController.swift; sourceTree = "<group>"; };
+		F483595D2212B30D0001C0FE /* NetWorkBusnissViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkBusnissViewModel.swift; sourceTree = "<group>"; };
+		F48359602212BDB20001C0FE /* CommonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonService.swift; sourceTree = "<group>"; };
+		F48359642212C6E70001C0FE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F4EAAD692211507D001A8EFB /* NetOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetOperators.swift; sourceTree = "<group>"; };
+		F4EAAD6B22115C50001A8EFB /* BaseJsonResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseJsonResult.swift; sourceTree = "<group>"; };
+		F4EAAD6D22115EB3001A8EFB /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F4EAAD6F22117ABB001A8EFB /* NetWorkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +169,7 @@
 				F4189C5C21F5622300E07CF6 /* Assets.xcassets */,
 				F4189C5E21F5622300E07CF6 /* LaunchScreen.storyboard */,
 				F4189C6121F5622300E07CF6 /* Info.plist */,
+				F48359642212C6E70001C0FE /* Result.swift */,
 			);
 			path = SwiftDemo;
 			sourceTree = "<group>";
@@ -178,6 +195,10 @@
 		F41A6A4A2202A1C300D59A2C /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				F4EAAD692211507D001A8EFB /* NetOperators.swift */,
+				F4EAAD6B22115C50001A8EFB /* BaseJsonResult.swift */,
+				F4EAAD6F22117ABB001A8EFB /* NetWorkError.swift */,
+				F4835955221299970001C0FE /* TokenRefresher.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -222,6 +243,7 @@
 		F444094721F8042E00BF8C01 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F48359572212B1FA0001C0FE /* NetWorkBusiness */,
 				F41A6A4D2202EB1800D59A2C /* TableViewController */,
 				F444094821F8043D00BF8C01 /* Login */,
 			);
@@ -270,10 +292,44 @@
 			path = Bean;
 			sourceTree = "<group>";
 		};
+		F48359572212B1FA0001C0FE /* NetWorkBusiness */ = {
+			isa = PBXGroup;
+			children = (
+				F483595F2212BD9D0001C0FE /* Store */,
+				F483595A2212B2C80001C0FE /* ViewModel */,
+				F48359592212B2C40001C0FE /* View */,
+			);
+			path = NetWorkBusiness;
+			sourceTree = "<group>";
+		};
+		F48359592212B2C40001C0FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F483595B2212B2FB0001C0FE /* NetWorkBusinessViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F483595A2212B2C80001C0FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F483595D2212B30D0001C0FE /* NetWorkBusnissViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F483595F2212BD9D0001C0FE /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F48359602212BDB20001C0FE /* CommonService.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		F4DA457C22003A6900E80A5A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F4DA457D220042F400E80A5A /* LoginViewModel.swift */,
+				F4EAAD6D22115EB3001A8EFB /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -568,12 +624,20 @@
 				F41A6A5F2202F82100D59A2C /* UserTableViewController.swift in Sources */,
 				F41A6A622202FA7300D59A2C /* UserService.swift in Sources */,
 				F41A6A592202F6C400D59A2C /* Operators.swift in Sources */,
+				F48359612212BDB20001C0FE /* CommonService.swift in Sources */,
 				F44647A52203F43C00D3BDD5 /* UserTableViewModel.swift in Sources */,
+				F48359652212C6E70001C0FE /* Result.swift in Sources */,
 				F444094B21F8049200BF8C01 /* LoginService.swift in Sources */,
-				F4DA457E220042F400E80A5A /* LoginViewModel.swift in Sources */,
+				F4835956221299970001C0FE /* TokenRefresher.swift in Sources */,
+				F4EAAD6E22115EB3001A8EFB /* LoginViewModel.swift in Sources */,
+				F483595C2212B2FB0001C0FE /* NetWorkBusinessViewController.swift in Sources */,
 				F44647A32203EB3600D3BDD5 /* UserBean.swift in Sources */,
 				F41A6A5B2202F6C400D59A2C /* ActivityIndicator.swift in Sources */,
+				F4EAAD6A2211507D001A8EFB /* NetOperators.swift in Sources */,
 				F44647A7220425A800D3BDD5 /* UserInfoTableCell.swift in Sources */,
+				F4EAAD6C22115C50001A8EFB /* BaseJsonResult.swift in Sources */,
+				F4EAAD7022117ABB001A8EFB /* NetWorkError.swift in Sources */,
+				F483595E2212B30D0001C0FE /* NetWorkBusnissViewModel.swift in Sources */,
 				F4189C5621F5621800E07CF6 /* AppDelegate.swift in Sources */,
 				F41A6A652202FE3B00D59A2C /* IndexViewController.swift in Sources */,
 			);

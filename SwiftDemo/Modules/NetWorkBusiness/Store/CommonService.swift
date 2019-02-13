@@ -1,8 +1,8 @@
 //
-// LoginService.swift 
+// CommonService.swift 
 // SwiftDemo 
 // 
-// Created by Plena on 2019/1/23.
+// Created by Plena on 2019/2/12. 
 // Copyright © 2019 Linzy. All rights reserved.
 // 
 
@@ -10,20 +10,22 @@
 import Foundation
 import Moya
 
-enum LoginService{
-    case LoginRequest(username:String,password:String)
+enum CommonService{
+    case getNationList()
 }
 
-extension LoginService : TargetType{
+extension CommonService : TargetType{
     var baseURL : URL{ return URL(string: "http://192.168.26.132:8063")!};
     var path : String{
         switch self {
-        case .LoginRequest:
-            return "/user/login";
+        case .getNationList:
+            return "/common/getNationList";
         }
     }
     var method : Moya.Method{
         switch self {
+        case .getNationList:
+            return .get
         default:
             return .get
         }
@@ -32,8 +34,6 @@ extension LoginService : TargetType{
     
     var task : Task{
         switch self {
-        case let .LoginRequest(username: username, password: passwd):
-            return .requestParameters(parameters: ["account":username,"password":passwd,"type":1], encoding: URLEncoding.queryString)
         default:
             return .requestPlain;
         }
@@ -41,7 +41,7 @@ extension LoginService : TargetType{
     
     var sampleData : Data {
         switch self {
-        case .LoginRequest:
+        case .getNationList:
             return  Data();
         default:
             return  Data();
@@ -51,5 +51,4 @@ extension LoginService : TargetType{
     var headers: [String:String]?{
         return ["Content-type": "application/json"]
     }
-
 }
