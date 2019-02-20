@@ -12,9 +12,10 @@ import RxSwift
 import Moya
 
 extension Observable where E: Response {
-    func toJSON<T:Codable>(_ type: T.Type) -> Observable<T> {
+    func toJSONWithRetryToken<T:Codable>(_ type: T.Type) -> Observable<T> {
         return flatMap({ response -> Observable<T> in
             let jsonResult = try! JSONDecoder().decode(ModelResponse<T>.self, from: response.data)
+         //   NSCache<AnyObject,String>().setObject(jsonResult.data, forKey: "111")
             return Observable<T>.just(jsonResult.data!)
         }).retryWhen { errors -> Observable<Void> in
             var retryCounter = 0;
