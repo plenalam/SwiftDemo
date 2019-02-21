@@ -32,6 +32,8 @@
 		F48359612212BDB20001C0FE /* CommonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48359602212BDB20001C0FE /* CommonService.swift */; };
 		F48359652212C6E70001C0FE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48359642212C6E70001C0FE /* Result.swift */; };
 		F49487D9221BE535002F07D9 /* NetBusinessPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49487D8221BE535002F07D9 /* NetBusinessPlugin.swift */; };
+		F4AB9A3D221D36EB00735765 /* EurekaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB9A3C221D36EB00735765 /* EurekaViewController.swift */; };
+		F4AB9A40221D550F00735765 /* JsonCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB9A3F221D550F00735765 /* JsonCodeViewController.swift */; };
 		F4EAAD6A2211507D001A8EFB /* NetOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAAD692211507D001A8EFB /* NetOperators.swift */; };
 		F4EAAD6C22115C50001A8EFB /* BaseJsonResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAAD6B22115C50001A8EFB /* BaseJsonResult.swift */; };
 		F4EAAD6E22115EB3001A8EFB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAAD6D22115EB3001A8EFB /* LoginViewModel.swift */; };
@@ -93,6 +95,8 @@
 		F48359602212BDB20001C0FE /* CommonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonService.swift; sourceTree = "<group>"; };
 		F48359642212C6E70001C0FE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		F49487D8221BE535002F07D9 /* NetBusinessPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetBusinessPlugin.swift; sourceTree = "<group>"; };
+		F4AB9A3C221D36EB00735765 /* EurekaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaViewController.swift; sourceTree = "<group>"; };
+		F4AB9A3F221D550F00735765 /* JsonCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonCodeViewController.swift; sourceTree = "<group>"; };
 		F4EAAD692211507D001A8EFB /* NetOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetOperators.swift; sourceTree = "<group>"; };
 		F4EAAD6B22115C50001A8EFB /* BaseJsonResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseJsonResult.swift; sourceTree = "<group>"; };
 		F4EAAD6D22115EB3001A8EFB /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -246,6 +250,8 @@
 		F444094721F8042E00BF8C01 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4AB9A3E221D54F100735765 /* Json */,
+				F4AB9A39221D369800735765 /* Form */,
 				F48359572212B1FA0001C0FE /* NetWorkBusiness */,
 				F41A6A4D2202EB1800D59A2C /* TableViewController */,
 				F444094821F8043D00BF8C01 /* Login */,
@@ -327,6 +333,38 @@
 				F48359602212BDB20001C0FE /* CommonService.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		F4AB9A39221D369800735765 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				F4AB9A3B221D36C900735765 /* Eureka */,
+				F4AB9A3A221D36A400735765 /* CustomForm */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		F4AB9A3A221D36A400735765 /* CustomForm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomForm;
+			sourceTree = "<group>";
+		};
+		F4AB9A3B221D36C900735765 /* Eureka */ = {
+			isa = PBXGroup;
+			children = (
+				F4AB9A3C221D36EB00735765 /* EurekaViewController.swift */,
+			);
+			path = Eureka;
+			sourceTree = "<group>";
+		};
+		F4AB9A3E221D54F100735765 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				F4AB9A3F221D550F00735765 /* JsonCodeViewController.swift */,
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 		F4DA457C22003A6900E80A5A /* ViewModel */ = {
@@ -586,6 +624,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -601,6 +640,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -626,6 +666,7 @@
 				F444094E21F80C0300BF8C01 /* LoginViewController.swift in Sources */,
 				F41A6A5F2202F82100D59A2C /* UserTableViewController.swift in Sources */,
 				F41A6A622202FA7300D59A2C /* UserService.swift in Sources */,
+				F4AB9A3D221D36EB00735765 /* EurekaViewController.swift in Sources */,
 				F41A6A592202F6C400D59A2C /* Operators.swift in Sources */,
 				F48359612212BDB20001C0FE /* CommonService.swift in Sources */,
 				F44647A52203F43C00D3BDD5 /* UserTableViewModel.swift in Sources */,
@@ -644,6 +685,7 @@
 				F483595E2212B30D0001C0FE /* NetWorkBusnissViewModel.swift in Sources */,
 				F4189C5621F5621800E07CF6 /* AppDelegate.swift in Sources */,
 				F41A6A652202FE3B00D59A2C /* IndexViewController.swift in Sources */,
+				F4AB9A40221D550F00735765 /* JsonCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

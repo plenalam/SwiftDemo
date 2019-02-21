@@ -11,7 +11,7 @@ import Foundation
 import UIKit
 
 class IndexViewController : UIViewController,UITableViewDelegate,UITableViewDataSource {
-    let datasource = ["Login MVVM","TableView MMVM","NetWorkBusiness"]
+    let datasource = ["Login MVVM","Json And Codeable","TableView MMVM","NetWorkBusiness","Eureka"]
     let CELLID = "cellid"
     
     override func viewDidLoad() {
@@ -31,9 +31,13 @@ class IndexViewController : UIViewController,UITableViewDelegate,UITableViewData
         case 0:
             navigationController?.pushViewController(LoginViewController(), animated: true)
         case 1:
-            navigationController?.pushViewController(UserTableViewController(), animated: true)
+            navigationController?.pushViewController(JsonCodeViewController(), animated: true)
         case 2:
+            navigationController?.pushViewController(UserTableViewController(), animated: true)
+        case 3:
              navigationController?.pushViewController(NetWorkBusinessViewController(), animated: true)
+        case 4:
+            navigationController?.pushViewController(EurekaViewController(), animated: true)
         default:
             break
         }

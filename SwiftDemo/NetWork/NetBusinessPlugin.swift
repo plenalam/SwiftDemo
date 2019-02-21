@@ -19,4 +19,5 @@ class NetBusinessPlugin:PluginType{
         mutableRequest.setValue("ETag", forHTTPHeaderField: "If-None-Match")
         return request;
     }
+    
 }

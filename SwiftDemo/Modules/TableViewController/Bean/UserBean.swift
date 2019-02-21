@@ -16,14 +16,25 @@ class UserBean : Codable{
         case male = "male"
     }
     
-    class username: Codable {
+    struct UserName: Codable {
         var title : String
         var first : String
         var last : String
+        
+        init() {
+            first = ""
+            last = ""
+            title = ""
+        }
     }
-    var name: username
+    var name: UserName?
     var gender: Gender
+    var phone: Int?
+    var address: String?
 
+    init() {
+        gender = .female
+    }
     
 }
 

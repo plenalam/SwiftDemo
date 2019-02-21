@@ -15,8 +15,11 @@ extension Observable where E: Response {
     func toJSONWithRetryToken<T:Codable>(_ type: T.Type) -> Observable<T> {
         return flatMap({ response -> Observable<T> in
             let jsonResult = try! JSONDecoder().decode(ModelResponse<T>.self, from: response.data)
-         //   NSCache<AnyObject,String>().setObject(jsonResult.data, forKey: "111")
-            return Observable<T>.just(jsonResult.data!)
+            if(jsonResult.code == 0){
+                     return Observable<T>.just(jsonResult.data!)
+            }else{
+                return Observable<T>.error(NetWorkError.TokenExpired)
+            }
         }).retryWhen { errors -> Observable<Void> in
             var retryCounter = 0;
             return errors.flatMap({ error -> Observable<Void> in

@@ -13,6 +13,7 @@ target 'SwiftDemo' do
   pod 'Moya/RxSwift', '~> 12.0'
   pod 'Kingfisher'
   pod 'SwiftyJSON'
+  pod 'Eureka'
 
 
 
