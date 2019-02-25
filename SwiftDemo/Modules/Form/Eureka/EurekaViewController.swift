@@ -28,16 +28,20 @@ class EurekaViewController: FormViewController {
             }
             +++ Section("Section2")
             <<< DateRow(){
-                
                 $0.title = "Date Row"
                 $0.value = Date(timeIntervalSinceReferenceDate: 0)
-            
         }
             +++ ButtonRow(){
                 $0.title = "确定"
                 $0.tag = "confirm"
                 }.onCellSelection({ (row, row1) in
                    print( self.form.values())
+                    let data = try? JSONSerialization.data(withJSONObject: self.form.values(), options: .prettyPrinted)
+                    guard let bean = try? JSONDecoder().decode(UserBean.self, from: data!) else{
+                        
+                        return
+                    }
+                    print("\(bean)")
                 })
         
     }

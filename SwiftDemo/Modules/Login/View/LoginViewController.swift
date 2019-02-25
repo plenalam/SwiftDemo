@@ -14,6 +14,7 @@ import Moya
 import RxSwift
 import RxCocoa
 
+
 class LoginViewController: UIViewController {
     var disposeBag = DisposeBag()
     
@@ -39,6 +40,7 @@ class LoginViewController: UIViewController {
         self.view.addSubview(userNameTextField);
         userNameTextField.placeholder = "username";
         userNameTextField.borderStyle = .bezel;
+        userNameTextField.accessibilityIdentifier = ""
         userNameTextField.snp.makeConstraints { (make) in
             make.top.equalTo(self.view).offset(200);
             make.leading.equalTo(self.view).offset(20);
@@ -94,6 +96,8 @@ class LoginViewController: UIViewController {
             .subscribe(onNext: { [weak self] _ in
                 NSLog("username:\(self?.viewModel.usernameVar.value)");
                 NSLog("password:\(self?.viewModel.passwordVar.value)");
+                NSLog("\(self?.logBtn.accessibilityIdentifier)")
+                NSLog("\(self?.passWordTextField.accessibilityIdentifier)")
                 }
             ).disposed(by: disposeBag);
         twowaybindingBtn.rx.tap

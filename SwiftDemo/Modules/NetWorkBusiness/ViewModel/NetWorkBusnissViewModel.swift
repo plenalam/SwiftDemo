@@ -45,12 +45,15 @@ class NetWorkBusnissViewModel{
     }
     
     func getNationList() {
-        provider.rx.request(.getNationList()).asObservable().toJSONWithRetryToken(String.self).subscribe {[weak self] (event) in
+        provider.rx.request(.getNationList())
+            .asObservable()
+            .toJSONWithRetryToken(String.self)
+            .subscribe {[weak self] (event) in
             switch event{
             case .next(let response):
                 self?.naitonRequestSubject.onNext(Result<String>.success(response))
-            case .error:
-                self?.naitonRequestSubject.onNext(Result.failure(NetWorkError.JSONDecode))
+            case .error(let error):
+                self?.naitonRequestSubject.onNext(Result.failure(error))
             default:
                 break
             }
