@@ -32,6 +32,14 @@
 		F48359612212BDB20001C0FE /* CommonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48359602212BDB20001C0FE /* CommonService.swift */; };
 		F48359652212C6E70001C0FE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48359642212C6E70001C0FE /* Result.swift */; };
 		F49487D9221BE535002F07D9 /* NetBusinessPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49487D8221BE535002F07D9 /* NetBusinessPlugin.swift */; };
+		F4A5E72E22237A4900EA0DC6 /* LBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5E72D22237A4900EA0DC6 /* LBaseCell.swift */; };
+		F4A5E73022237AD600EA0DC6 /* LEditTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5E72F22237AD600EA0DC6 /* LEditTextCell.swift */; };
+		F4A5E73222237AE000EA0DC6 /* LEditText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5E73122237AE000EA0DC6 /* LEditText.swift */; };
+		F4A5E73422237F8C00EA0DC6 /* CustomFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5E73322237F8C00EA0DC6 /* CustomFormVC.swift */; };
+		F4A5E736222392F800EA0DC6 /* LBaseCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5E735222392F800EA0DC6 /* LBaseCellType.swift */; };
+		F4A5E7382223975200EA0DC6 /* LBaseCellBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5E7372223975200EA0DC6 /* LBaseCellBean.swift */; };
+		F4A5E73B2223BF5F00EA0DC6 /* DequeueReusableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5E73A2223BF5F00EA0DC6 /* DequeueReusableTableView.swift */; };
+		F4A5E73D2223CDF400EA0DC6 /* CustomForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5E73C2223CDF400EA0DC6 /* CustomForm.swift */; };
 		F4AB9A3D221D36EB00735765 /* EurekaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB9A3C221D36EB00735765 /* EurekaViewController.swift */; };
 		F4AB9A40221D550F00735765 /* JsonCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB9A3F221D550F00735765 /* JsonCodeViewController.swift */; };
 		F4EAAD6A2211507D001A8EFB /* NetOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAAD692211507D001A8EFB /* NetOperators.swift */; };
@@ -95,6 +103,14 @@
 		F48359602212BDB20001C0FE /* CommonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonService.swift; sourceTree = "<group>"; };
 		F48359642212C6E70001C0FE /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		F49487D8221BE535002F07D9 /* NetBusinessPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetBusinessPlugin.swift; sourceTree = "<group>"; };
+		F4A5E72D22237A4900EA0DC6 /* LBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBaseCell.swift; sourceTree = "<group>"; };
+		F4A5E72F22237AD600EA0DC6 /* LEditTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEditTextCell.swift; sourceTree = "<group>"; };
+		F4A5E73122237AE000EA0DC6 /* LEditText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEditText.swift; sourceTree = "<group>"; };
+		F4A5E73322237F8C00EA0DC6 /* CustomFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFormVC.swift; sourceTree = "<group>"; };
+		F4A5E735222392F800EA0DC6 /* LBaseCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBaseCellType.swift; sourceTree = "<group>"; };
+		F4A5E7372223975200EA0DC6 /* LBaseCellBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBaseCellBean.swift; sourceTree = "<group>"; };
+		F4A5E73A2223BF5F00EA0DC6 /* DequeueReusableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeueReusableTableView.swift; sourceTree = "<group>"; };
+		F4A5E73C2223CDF400EA0DC6 /* CustomForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomForm.swift; sourceTree = "<group>"; };
 		F4AB9A3C221D36EB00735765 /* EurekaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaViewController.swift; sourceTree = "<group>"; };
 		F4AB9A3F221D550F00735765 /* JsonCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonCodeViewController.swift; sourceTree = "<group>"; };
 		F4EAAD692211507D001A8EFB /* NetOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetOperators.swift; sourceTree = "<group>"; };
@@ -166,6 +182,7 @@
 		F4189C5421F5621800E07CF6 /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F4A5E7392223BF3E00EA0DC6 /* Utils */,
 				F41A6A552202F69A00D59A2C /* RxExtensions */,
 				F41A6A4A2202A1C300D59A2C /* NetWork */,
 				F444094721F8042E00BF8C01 /* Modules */,
@@ -335,6 +352,42 @@
 			path = Store;
 			sourceTree = "<group>";
 		};
+		F4A5E72A222377E400EA0DC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4A5E73322237F8C00EA0DC6 /* CustomFormVC.swift */,
+				F4A5E73C2223CDF400EA0DC6 /* CustomForm.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F4A5E72B222377E400EA0DC6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F4A5E72D22237A4900EA0DC6 /* LBaseCell.swift */,
+				F4A5E72F22237AD600EA0DC6 /* LEditTextCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F4A5E72C222377E400EA0DC6 /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				F4A5E73122237AE000EA0DC6 /* LEditText.swift */,
+				F4A5E735222392F800EA0DC6 /* LBaseCellType.swift */,
+				F4A5E7372223975200EA0DC6 /* LBaseCellBean.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		F4A5E7392223BF3E00EA0DC6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F4A5E73A2223BF5F00EA0DC6 /* DequeueReusableTableView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		F4AB9A39221D369800735765 /* Form */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +400,9 @@
 		F4AB9A3A221D36A400735765 /* CustomForm */ = {
 			isa = PBXGroup;
 			children = (
+				F4A5E72C222377E400EA0DC6 /* Bean */,
+				F4A5E72B222377E400EA0DC6 /* Cell */,
+				F4A5E72A222377E400EA0DC6 /* Controller */,
 			);
 			path = CustomForm;
 			sourceTree = "<group>";
@@ -670,18 +726,26 @@
 				F41A6A592202F6C400D59A2C /* Operators.swift in Sources */,
 				F48359612212BDB20001C0FE /* CommonService.swift in Sources */,
 				F44647A52203F43C00D3BDD5 /* UserTableViewModel.swift in Sources */,
+				F4A5E73222237AE000EA0DC6 /* LEditText.swift in Sources */,
 				F48359652212C6E70001C0FE /* Result.swift in Sources */,
 				F444094B21F8049200BF8C01 /* LoginService.swift in Sources */,
 				F4835956221299970001C0FE /* TokenRefresher.swift in Sources */,
 				F4EAAD6E22115EB3001A8EFB /* LoginViewModel.swift in Sources */,
 				F483595C2212B2FB0001C0FE /* NetWorkBusinessViewController.swift in Sources */,
+				F4A5E73B2223BF5F00EA0DC6 /* DequeueReusableTableView.swift in Sources */,
+				F4A5E73422237F8C00EA0DC6 /* CustomFormVC.swift in Sources */,
+				F4A5E7382223975200EA0DC6 /* LBaseCellBean.swift in Sources */,
+				F4A5E73D2223CDF400EA0DC6 /* CustomForm.swift in Sources */,
 				F44647A32203EB3600D3BDD5 /* UserBean.swift in Sources */,
 				F41A6A5B2202F6C400D59A2C /* ActivityIndicator.swift in Sources */,
 				F4EAAD6A2211507D001A8EFB /* NetOperators.swift in Sources */,
 				F49487D9221BE535002F07D9 /* NetBusinessPlugin.swift in Sources */,
 				F44647A7220425A800D3BDD5 /* UserInfoTableCell.swift in Sources */,
+				F4A5E72E22237A4900EA0DC6 /* LBaseCell.swift in Sources */,
 				F4EAAD6C22115C50001A8EFB /* BaseJsonResult.swift in Sources */,
+				F4A5E73022237AD600EA0DC6 /* LEditTextCell.swift in Sources */,
 				F4EAAD7022117ABB001A8EFB /* NetWorkError.swift in Sources */,
+				F4A5E736222392F800EA0DC6 /* LBaseCellType.swift in Sources */,
 				F483595E2212B30D0001C0FE /* NetWorkBusnissViewModel.swift in Sources */,
 				F4189C5621F5621800E07CF6 /* AppDelegate.swift in Sources */,
 				F41A6A652202FE3B00D59A2C /* IndexViewController.swift in Sources */,

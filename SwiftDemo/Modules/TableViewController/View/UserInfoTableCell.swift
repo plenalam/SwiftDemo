@@ -26,7 +26,7 @@ class  UserInfoTableCell: UITableViewCell {
         guard let pbean = tbean else {
             return
         }
-        nameLabel.text = "\(pbean.name?.first) \(pbean.name?.last)"
+        nameLabel.text = "\(String(describing: pbean.name?.first)) \(String(describing: pbean.name?.last))"
         switch pbean.gender {
         case .female:
             genderLabel.text = "男"
