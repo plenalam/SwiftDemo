@@ -20,6 +20,8 @@ class CustomForm : NSObject, UITableViewDelegate,UITableViewDataSource{
         formTableView.dataSource = self
         formTableView.delegate = self
         formTableView.register(LEditTextCell.self, forCellReuseIdentifier:String(describing: type(of: LEditTextCell.self)) )
+          formTableView.register(LPickerCell.self, forCellReuseIdentifier:String(describing: type(of: LPickerCell
+            .self)) )
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -27,9 +29,18 @@ class CustomForm : NSObject, UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(with: LEditTextCell.self, for: indexPath)
-        cell.bindViewModel(pBean: datasource[indexPath.row])
-        return cell
+        let bean = datasource[indexPath.row]
+        
+        switch bean {
+        case is LPicker:
+            let cell = tableView.dequeueReusableCell(with: LPickerCell.self, for: indexPath)
+            cell.bindViewModel(pBean: bean)
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(with: LEditTextCell.self, for: indexPath)
+            cell.bindViewModel(pBean: bean)
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -12,7 +12,7 @@ import UIKit
 
 class LEditTextCell : LBaseCell ,UITextFieldDelegate{
     
-    let editField = UITextField()
+    public let editField = UITextField()
     
     override  public func setupUI(){
         contentView.addSubview(titleLabel)
@@ -34,18 +34,9 @@ class LEditTextCell : LBaseCell ,UITextFieldDelegate{
     
     override public func bindViewModel(pBean:LBaseCellBean){
         super.bindViewModel(pBean: pBean)
-        if let title = pBean.title{
-            titleLabel.text = title
-            editField.placeholder = "请输入\(title)"
-        }else {
-            titleLabel.text = ""
-            editField.placeholder = ""
-        }
-        if let value = pBean.value{
-            editField.text = value
-        }else {
-            editField.text = " "
-        }
+        titleLabel.text = pBean.title ?? "标题"
+        editField.placeholder = "请输入\(pBean.title ?? "")"
+        editField.text = pBean.value ?? ""
         
     }
     

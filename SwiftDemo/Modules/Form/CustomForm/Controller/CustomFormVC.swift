@@ -23,6 +23,11 @@ class CustomFormVC: UIViewController{
         bean.title = "姓名"
         bean.value = ""
         customForm.datasource.append(bean)
+        let pickBean = LPicker.init(jsonKey: "name")
+        pickBean.title = "性别"
+        pickBean.value = "男"
+        pickBean.datasource = ["男","女"]
+        customForm.datasource.append(pickBean)
         customForm.setupTableView()
     }
     

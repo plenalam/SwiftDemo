@@ -40,6 +40,8 @@
 		F4A5E7382223975200EA0DC6 /* LBaseCellBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5E7372223975200EA0DC6 /* LBaseCellBean.swift */; };
 		F4A5E73B2223BF5F00EA0DC6 /* DequeueReusableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5E73A2223BF5F00EA0DC6 /* DequeueReusableTableView.swift */; };
 		F4A5E73D2223CDF400EA0DC6 /* CustomForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5E73C2223CDF400EA0DC6 /* CustomForm.swift */; };
+		F4A5E73F2223E52200EA0DC6 /* LPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5E73E2223E52200EA0DC6 /* LPicker.swift */; };
+		F4A5E7412223E62A00EA0DC6 /* LPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5E7402223E62A00EA0DC6 /* LPickerCell.swift */; };
 		F4AB9A3D221D36EB00735765 /* EurekaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB9A3C221D36EB00735765 /* EurekaViewController.swift */; };
 		F4AB9A40221D550F00735765 /* JsonCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB9A3F221D550F00735765 /* JsonCodeViewController.swift */; };
 		F4EAAD6A2211507D001A8EFB /* NetOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAAD692211507D001A8EFB /* NetOperators.swift */; };
@@ -111,6 +113,8 @@
 		F4A5E7372223975200EA0DC6 /* LBaseCellBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBaseCellBean.swift; sourceTree = "<group>"; };
 		F4A5E73A2223BF5F00EA0DC6 /* DequeueReusableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeueReusableTableView.swift; sourceTree = "<group>"; };
 		F4A5E73C2223CDF400EA0DC6 /* CustomForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomForm.swift; sourceTree = "<group>"; };
+		F4A5E73E2223E52200EA0DC6 /* LPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPicker.swift; sourceTree = "<group>"; };
+		F4A5E7402223E62A00EA0DC6 /* LPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPickerCell.swift; sourceTree = "<group>"; };
 		F4AB9A3C221D36EB00735765 /* EurekaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaViewController.swift; sourceTree = "<group>"; };
 		F4AB9A3F221D550F00735765 /* JsonCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonCodeViewController.swift; sourceTree = "<group>"; };
 		F4EAAD692211507D001A8EFB /* NetOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetOperators.swift; sourceTree = "<group>"; };
@@ -366,6 +370,7 @@
 			children = (
 				F4A5E72D22237A4900EA0DC6 /* LBaseCell.swift */,
 				F4A5E72F22237AD600EA0DC6 /* LEditTextCell.swift */,
+				F4A5E7402223E62A00EA0DC6 /* LPickerCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 				F4A5E73122237AE000EA0DC6 /* LEditText.swift */,
 				F4A5E735222392F800EA0DC6 /* LBaseCellType.swift */,
 				F4A5E7372223975200EA0DC6 /* LBaseCellBean.swift */,
+				F4A5E73E2223E52200EA0DC6 /* LPicker.swift */,
 			);
 			path = Bean;
 			sourceTree = "<group>";
@@ -724,6 +730,7 @@
 				F41A6A622202FA7300D59A2C /* UserService.swift in Sources */,
 				F4AB9A3D221D36EB00735765 /* EurekaViewController.swift in Sources */,
 				F41A6A592202F6C400D59A2C /* Operators.swift in Sources */,
+				F4A5E7412223E62A00EA0DC6 /* LPickerCell.swift in Sources */,
 				F48359612212BDB20001C0FE /* CommonService.swift in Sources */,
 				F44647A52203F43C00D3BDD5 /* UserTableViewModel.swift in Sources */,
 				F4A5E73222237AE000EA0DC6 /* LEditText.swift in Sources */,
@@ -737,6 +744,7 @@
 				F4A5E7382223975200EA0DC6 /* LBaseCellBean.swift in Sources */,
 				F4A5E73D2223CDF400EA0DC6 /* CustomForm.swift in Sources */,
 				F44647A32203EB3600D3BDD5 /* UserBean.swift in Sources */,
+				F4A5E73F2223E52200EA0DC6 /* LPicker.swift in Sources */,
 				F41A6A5B2202F6C400D59A2C /* ActivityIndicator.swift in Sources */,
 				F4EAAD6A2211507D001A8EFB /* NetOperators.swift in Sources */,
 				F49487D9221BE535002F07D9 /* NetBusinessPlugin.swift in Sources */,

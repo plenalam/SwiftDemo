@@ -31,8 +31,7 @@ class LBaseCell : UITableViewCell{
     public func bindViewModel(pBean:LBaseCellBean){
         self.bean = pBean
     }
-    
-    
+
 }
 
 

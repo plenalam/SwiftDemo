@@ -1,5 +1,5 @@
 //
-// LBaseCellType.swift 
+// LPicker.swift 
 // SwiftDemo 
 // 
 // Created by Plena on 2019/2/25. 
@@ -8,8 +8,7 @@
 
 
 import Foundation
-
-protocol LBaseCellType {
-    
+import RxSwift
+class LPicker : LEditText{
+    var datasource : [String]?
 }
-
