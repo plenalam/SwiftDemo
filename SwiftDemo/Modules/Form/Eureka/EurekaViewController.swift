@@ -12,6 +12,7 @@ import UIKit
 import Eureka
 
 class EurekaViewController: FormViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Eureka"

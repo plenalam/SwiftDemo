@@ -13,7 +13,18 @@ class LBaseCellBean : Codable,LBaseCellType{
     var jsonkey: String
     var value: String?
     
-    init(jsonKey:String) {
-        jsonkey = jsonKey
+    
+    func settter() {
+        
     }
+    public init(jsonkey:String){
+        self.jsonkey = jsonkey
+    }
+    
+    public init(_ jsonkey:String, _ initializer: @escaping (LBaseCellBean) -> Void = { _ in }) {
+        self.jsonkey = jsonkey
+        initializer(self)
+    }
+   
 }
+

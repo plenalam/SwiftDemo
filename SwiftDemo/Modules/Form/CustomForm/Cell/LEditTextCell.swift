@@ -12,7 +12,10 @@ import UIKit
 
 class LEditTextCell : LBaseCell ,UITextFieldDelegate{
     
-    public let editField = UITextField()
+    public let editField : UITextField = {
+        let temp = UITextField()
+        return temp
+    }()
     
     override  public func setupUI(){
         contentView.addSubview(titleLabel)

@@ -9,7 +9,7 @@
 
 import Foundation
 
-protocol LBaseCellType {
-    
+public protocol LBaseCellType {
+
 }
 

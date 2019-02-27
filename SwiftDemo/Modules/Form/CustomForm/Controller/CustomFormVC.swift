@@ -19,15 +19,28 @@ class CustomFormVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        let bean = LEditText.init(jsonKey: "name")
-        bean.title = "姓名"
-        bean.value = ""
+//        let bean = LEditText.init(jsonKey: "name")
+//        bean.title = "姓名"
+//        bean.value = ""
+        let bean : LEditText = {
+            let temp = LEditText("name")
+            temp.title = "姓名"
+            temp.value = ""
+            return temp
+        }()
+        
         customForm.datasource.append(bean)
-        let pickBean = LPicker.init(jsonKey: "name")
+        let pickBean = LPicker("sex")
         pickBean.title = "性别"
         pickBean.value = "男"
         pickBean.datasource = ["男","女"]
         customForm.datasource.append(pickBean)
+        let pick = LBaseCellBean("") { (bean) in
+            bean.title = "性别"
+            bean.value = "男"
+            
+        }
+        customForm.datasource.append(pick)
         customForm.setupTableView()
     }
     
