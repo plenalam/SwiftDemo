@@ -27,6 +27,7 @@ class LoginViewModel {
             newValue.asObservable().subscribe(onNext:{[weak self] _ in
                 self?.loginRequest()
             })
+            .disposed(by: disposeBag)
 //            self.setupLoginRequet(loginTaps: newValue)
         }
         get{
@@ -35,6 +36,7 @@ class LoginViewModel {
     }
     
     // MARK:output
+    
     private let loginTapSubject = PublishSubject<Result<String>>()
     private let signingIn = ActivityIndicator()
     

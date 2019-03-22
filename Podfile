@@ -14,7 +14,7 @@ target 'SwiftDemo' do
   pod 'Kingfisher'
   pod 'SwiftyJSON'
   pod 'Eureka'
-
+  pod 'GSSwiftKit', :git => 'https://github.com/GosuncnMobile/GSSwiftKit.git'
 
 
   # Pods for SwiftDemo

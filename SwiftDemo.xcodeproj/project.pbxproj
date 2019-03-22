@@ -45,6 +45,7 @@
 		F4AB9A3D221D36EB00735765 /* EurekaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB9A3C221D36EB00735765 /* EurekaViewController.swift */; };
 		F4AB9A40221D550F00735765 /* JsonCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB9A3F221D550F00735765 /* JsonCodeViewController.swift */; };
 		F4E77CAC222E0490006D4426 /* WhereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E77CAB222E0490006D4426 /* WhereViewController.swift */; };
+		F4E77CB0222E6D6B006D4426 /* tttViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E77CAF222E6D6B006D4426 /* tttViewController.swift */; };
 		F4EAAD6A2211507D001A8EFB /* NetOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAAD692211507D001A8EFB /* NetOperators.swift */; };
 		F4EAAD6C22115C50001A8EFB /* BaseJsonResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAAD6B22115C50001A8EFB /* BaseJsonResult.swift */; };
 		F4EAAD6E22115EB3001A8EFB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAAD6D22115EB3001A8EFB /* LoginViewModel.swift */; };
@@ -119,6 +120,7 @@
 		F4AB9A3C221D36EB00735765 /* EurekaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaViewController.swift; sourceTree = "<group>"; };
 		F4AB9A3F221D550F00735765 /* JsonCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonCodeViewController.swift; sourceTree = "<group>"; };
 		F4E77CAB222E0490006D4426 /* WhereViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereViewController.swift; sourceTree = "<group>"; };
+		F4E77CAF222E6D6B006D4426 /* tttViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tttViewController.swift; sourceTree = "<group>"; };
 		F4EAAD692211507D001A8EFB /* NetOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetOperators.swift; sourceTree = "<group>"; };
 		F4EAAD6B22115C50001A8EFB /* BaseJsonResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseJsonResult.swift; sourceTree = "<group>"; };
 		F4EAAD6D22115EB3001A8EFB /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				F444094D21F80C0300BF8C01 /* LoginViewController.swift */,
+				F4E77CAF222E6D6B006D4426 /* tttViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -698,6 +701,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/GSSwiftKit/GSSwiftKit.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -714,6 +718,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GSSwiftKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -755,6 +760,7 @@
 				F4A5E73422237F8C00EA0DC6 /* CustomFormVC.swift in Sources */,
 				F4A5E7382223975200EA0DC6 /* LBaseCellBean.swift in Sources */,
 				F4A5E73D2223CDF400EA0DC6 /* CustomForm.swift in Sources */,
+				F4E77CB0222E6D6B006D4426 /* tttViewController.swift in Sources */,
 				F44647A32203EB3600D3BDD5 /* UserBean.swift in Sources */,
 				F4A5E73F2223E52200EA0DC6 /* LPicker.swift in Sources */,
 				F41A6A5B2202F6C400D59A2C /* ActivityIndicator.swift in Sources */,

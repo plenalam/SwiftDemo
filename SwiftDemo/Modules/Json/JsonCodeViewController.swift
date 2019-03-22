@@ -11,6 +11,7 @@
 import Foundation
 import UIKit
 import Eureka
+import GSSwiftKit
 
 class JsonCodeViewController: FormViewController {
     override func viewDidLoad() {
@@ -37,7 +38,7 @@ class JsonCodeViewController: FormViewController {
         JsonStrToCodeable(input: JsonStr!)
         encodableToDictionary(encodable: bean)
         
-        
+
     }
     
     private func JsonStrToCodeable(input:String){
