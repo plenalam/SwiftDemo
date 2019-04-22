@@ -8,14 +8,11 @@ target 'SwiftDemo' do
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
   pod 'IQKeyboardManager'
-  pod 'SwiftyJSON'
   pod 'Moya'
   pod 'Moya/RxSwift', '~> 12.0'
   pod 'Kingfisher'
-  pod 'SwiftyJSON'
   pod 'Eureka'
   pod 'GSSwiftKit', :git => 'https://github.com/GosuncnMobile/GSSwiftKit.git'
-
 
   # Pods for SwiftDemo
 

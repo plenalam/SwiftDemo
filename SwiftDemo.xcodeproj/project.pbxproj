@@ -10,6 +10,10 @@
 		073C5FBE0196267582644C8D /* Pods_SwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E7677E89980F0D2C5BC456 /* Pods_SwiftDemoUITests.framework */; };
 		3F1DED635198574A4E07628B /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABA9213887B863E07568CCF /* Pods_SwiftDemo.framework */; };
 		D1E564B65D11764160E03D89 /* Pods_SwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3087317ABF8D8817BF410B61 /* Pods_SwiftDemoTests.framework */; };
+		F40DAB6E226D9DB900CF42C6 /* PhotoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40DAB6D226D9DB900CF42C6 /* PhotoPreviewView.swift */; };
+		F40DAB70226D9DDE00CF42C6 /* PhotoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40DAB6F226D9DDE00CF42C6 /* PhotoPreviewViewController.swift */; };
+		F40DD1482255F65D006EC85C /* CustomEurekaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40DD1472255F65D006EC85C /* CustomEurekaViewController.swift */; };
+		F40DD14C2255F90A006EC85C /* GirdImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40DD14B2255F90A006EC85C /* GirdImageRow.swift */; };
 		F4189C5621F5621800E07CF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4189C5521F5621800E07CF6 /* AppDelegate.swift */; };
 		F4189C5B21F5621800E07CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4189C5921F5621800E07CF6 /* Main.storyboard */; };
 		F4189C5D21F5622300E07CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4189C5C21F5622300E07CF6 /* Assets.xcassets */; };
@@ -26,6 +30,8 @@
 		F44647A32203EB3600D3BDD5 /* UserBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44647A22203EB3600D3BDD5 /* UserBean.swift */; };
 		F44647A52203F43C00D3BDD5 /* UserTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44647A42203F43C00D3BDD5 /* UserTableViewModel.swift */; };
 		F44647A7220425A800D3BDD5 /* UserInfoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44647A6220425A800D3BDD5 /* UserInfoTableCell.swift */; };
+		F450961D225C6C74000359F0 /* GirdImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450961C225C6C74000359F0 /* GirdImageCell.swift */; };
+		F450961F225C995C000359F0 /* GirdImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450961E225C995C000359F0 /* GirdImageCollectionCell.swift */; };
 		F4835956221299970001C0FE /* TokenRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4835955221299970001C0FE /* TokenRefresher.swift */; };
 		F483595C2212B2FB0001C0FE /* NetWorkBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483595B2212B2FB0001C0FE /* NetWorkBusinessViewController.swift */; };
 		F483595E2212B30D0001C0FE /* NetWorkBusnissViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483595D2212B30D0001C0FE /* NetWorkBusnissViewModel.swift */; };
@@ -79,6 +85,10 @@
 		B7883DDFFF3A8B589D307428 /* Pods-SwiftDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemoUITests/Pods-SwiftDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CABA9213887B863E07568CCF /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E801AD96315DC77B2565D01E /* Pods-SwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDemoTests/Pods-SwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		F40DAB6D226D9DB900CF42C6 /* PhotoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewView.swift; sourceTree = "<group>"; };
+		F40DAB6F226D9DDE00CF42C6 /* PhotoPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewViewController.swift; sourceTree = "<group>"; };
+		F40DD1472255F65D006EC85C /* CustomEurekaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomEurekaViewController.swift; sourceTree = "<group>"; };
+		F40DD14B2255F90A006EC85C /* GirdImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirdImageRow.swift; sourceTree = "<group>"; };
 		F4189C5221F5621800E07CF6 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4189C5521F5621800E07CF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4189C5A21F5621800E07CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +111,8 @@
 		F44647A22203EB3600D3BDD5 /* UserBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBean.swift; sourceTree = "<group>"; };
 		F44647A42203F43C00D3BDD5 /* UserTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewModel.swift; sourceTree = "<group>"; };
 		F44647A6220425A800D3BDD5 /* UserInfoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableCell.swift; sourceTree = "<group>"; };
+		F450961C225C6C74000359F0 /* GirdImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirdImageCell.swift; sourceTree = "<group>"; };
+		F450961E225C995C000359F0 /* GirdImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirdImageCollectionCell.swift; sourceTree = "<group>"; };
 		F4835955221299970001C0FE /* TokenRefresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRefresher.swift; sourceTree = "<group>"; };
 		F483595B2212B2FB0001C0FE /* NetWorkBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkBusinessViewController.swift; sourceTree = "<group>"; };
 		F483595D2212B30D0001C0FE /* NetWorkBusnissViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkBusnissViewModel.swift; sourceTree = "<group>"; };
@@ -163,6 +175,27 @@
 				56E7677E89980F0D2C5BC456 /* Pods_SwiftDemoUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F40DD1412255ECCD006EC85C /* CustomEureka */ = {
+			isa = PBXGroup;
+			children = (
+				F40DAB6F226D9DDE00CF42C6 /* PhotoPreviewViewController.swift */,
+				F40DD1472255F65D006EC85C /* CustomEurekaViewController.swift */,
+				F40DD1442255ECE2006EC85C /* Source */,
+			);
+			path = CustomEureka;
+			sourceTree = "<group>";
+		};
+		F40DD1442255ECE2006EC85C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F40DD14B2255F90A006EC85C /* GirdImageRow.swift */,
+				F450961C225C6C74000359F0 /* GirdImageCell.swift */,
+				F450961E225C995C000359F0 /* GirdImageCollectionCell.swift */,
+				F40DAB6D226D9DB900CF42C6 /* PhotoPreviewView.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		F4189C4921F5621800E07CF6 = {
@@ -275,6 +308,7 @@
 		F444094721F8042E00BF8C01 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F40DD1412255ECCD006EC85C /* CustomEureka */,
 				F4E77CAA222E03CF006D4426 /* Where */,
 				F4AB9A3E221D54F100735765 /* Json */,
 				F4AB9A39221D369800735765 /* Form */,
@@ -670,7 +704,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDemoTests/Pods-SwiftDemoTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftDemoTests/Pods-SwiftDemoTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
@@ -687,7 +721,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDemoTests/Pods-SwiftDemoTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftDemoTests/Pods-SwiftDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9B4982E2D4D1689049C720CF /* [CP] Embed Pods Frameworks */ = {
@@ -698,7 +732,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/GSSwiftKit/GSSwiftKit.framework",
@@ -710,7 +744,6 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -727,11 +760,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -749,17 +781,22 @@
 				F4A5E7412223E62A00EA0DC6 /* LPickerCell.swift in Sources */,
 				F48359612212BDB20001C0FE /* CommonService.swift in Sources */,
 				F44647A52203F43C00D3BDD5 /* UserTableViewModel.swift in Sources */,
+				F40DAB6E226D9DB900CF42C6 /* PhotoPreviewView.swift in Sources */,
 				F4A5E73222237AE000EA0DC6 /* LEditText.swift in Sources */,
 				F48359652212C6E70001C0FE /* Result.swift in Sources */,
 				F444094B21F8049200BF8C01 /* LoginService.swift in Sources */,
 				F4835956221299970001C0FE /* TokenRefresher.swift in Sources */,
 				F4E77CAC222E0490006D4426 /* WhereViewController.swift in Sources */,
+				F450961F225C995C000359F0 /* GirdImageCollectionCell.swift in Sources */,
 				F4EAAD6E22115EB3001A8EFB /* LoginViewModel.swift in Sources */,
+				F40DAB70226D9DDE00CF42C6 /* PhotoPreviewViewController.swift in Sources */,
 				F483595C2212B2FB0001C0FE /* NetWorkBusinessViewController.swift in Sources */,
 				F4A5E73B2223BF5F00EA0DC6 /* DequeueReusableTableView.swift in Sources */,
+				F40DD1482255F65D006EC85C /* CustomEurekaViewController.swift in Sources */,
 				F4A5E73422237F8C00EA0DC6 /* CustomFormVC.swift in Sources */,
 				F4A5E7382223975200EA0DC6 /* LBaseCellBean.swift in Sources */,
 				F4A5E73D2223CDF400EA0DC6 /* CustomForm.swift in Sources */,
+				F450961D225C6C74000359F0 /* GirdImageCell.swift in Sources */,
 				F4E77CB0222E6D6B006D4426 /* tttViewController.swift in Sources */,
 				F44647A32203EB3600D3BDD5 /* UserBean.swift in Sources */,
 				F4A5E73F2223E52200EA0DC6 /* LPicker.swift in Sources */,
@@ -775,6 +812,7 @@
 				F483595E2212B30D0001C0FE /* NetWorkBusnissViewModel.swift in Sources */,
 				F4189C5621F5621800E07CF6 /* AppDelegate.swift in Sources */,
 				F41A6A652202FE3B00D59A2C /* IndexViewController.swift in Sources */,
+				F40DD14C2255F90A006EC85C /* GirdImageRow.swift in Sources */,
 				F4AB9A40221D550F00735765 /* JsonCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

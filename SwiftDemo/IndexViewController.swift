@@ -11,7 +11,14 @@ import Foundation
 import UIKit
 
 class IndexViewController : UIViewController,UITableViewDelegate,UITableViewDataSource {
-    let datasource = ["Login MVVM","Json And Codeable","TableView MMVM","NetWorkBusiness","Eureka","Custom Form","Where KeyWord"]
+    let datasource = ["Login MVVM",
+                      "Json And Codeable",
+                      "TableView MMVM",
+                      "NetWorkBusiness",
+                      "Eureka",
+                      "Custom Form",
+                      "Where KeyWord",
+                      "Custom Eureka"]
     let CELLID = "cellid"
     
     override func viewDidLoad() {
@@ -42,6 +49,8 @@ class IndexViewController : UIViewController,UITableViewDelegate,UITableViewData
             navigationController?.pushViewController(CustomFormVC(), animated: true)
         case 6:
             navigationController?.pushViewController(WhereViewController(), animated: true)
+        case 7:
+            navigationController?.pushViewController(CustomEurekaViewController(), animated: true)
         default:
             break
         }
