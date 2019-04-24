@@ -45,7 +45,7 @@ class NetWorkBusnissViewModel{
     }
     
     func getNationList() {
-        provider.rx.request(.getNationList())
+        provider.rx.request(.getNationList)
             .asObservable()
             .toJSONWithRetryToken(String.self)
             .subscribe {[weak self] (event) in

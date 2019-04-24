@@ -18,7 +18,8 @@ class IndexViewController : UIViewController,UITableViewDelegate,UITableViewData
                       "Eureka",
                       "Custom Form",
                       "Where KeyWord",
-                      "Custom Eureka"]
+                      "Custom Eureka",
+                      "QRCode"]
     let CELLID = "cellid"
     
     override func viewDidLoad() {
@@ -51,6 +52,9 @@ class IndexViewController : UIViewController,UITableViewDelegate,UITableViewData
             navigationController?.pushViewController(WhereViewController(), animated: true)
         case 7:
             navigationController?.pushViewController(CustomEurekaViewController(), animated: true)
+        case 8:
+            let qrscanvc = QRCodeScanViewController();
+            navigationController?.pushViewController(QRCodeScanViewController(), animated: true)
         default:
             break
         }

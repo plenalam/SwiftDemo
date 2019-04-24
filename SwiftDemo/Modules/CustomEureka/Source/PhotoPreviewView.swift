@@ -42,7 +42,7 @@ class PhotoPreviewView: UIView {
             maker.leading.bottom.trailing.top.equalToSuperview()
         }
         scrollView.bouncesZoom = true;
-        scrollView.maximumZoomScale = 2.5
+        scrollView.maximumZoomScale = 3.0
         scrollView.minimumZoomScale = 1.0
         scrollView.isMultipleTouchEnabled = true
         scrollView.scrollsToTop = false
@@ -59,10 +59,11 @@ class PhotoPreviewView: UIView {
     func setUpImageView() {
         imageView.snp.makeConstraints { (maker) in
             maker.leading.bottom.trailing.top.equalToSuperview()
+            maker.width.equalTo(UIScreen.main.bounds.size.width)
         }
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        imageView.backgroundColor = UIColor.init(white: 1.0, alpha: 0.5)
+        imageView.backgroundColor = UIColor.black
     }
     
     

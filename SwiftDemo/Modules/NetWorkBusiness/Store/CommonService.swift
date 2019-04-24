@@ -11,7 +11,7 @@ import Foundation
 import Moya
 
 enum CommonService{
-    case getNationList()
+    case getNationList
 }
 
 extension CommonService : TargetType{

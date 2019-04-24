@@ -56,8 +56,8 @@ class JsonCodeViewController: FormViewController {
             form.setValues(["Encodable To Dictionary":"error"])
             return
         }
-        form.setValues(["Encodable To Dictionary":"\(dictionary!)"])
-        dictionaryToEncodeable(dictionary: dictionary!)
+        form.setValues(["Encodable To Dictionary":"\(dictionary)"])
+        dictionaryToEncodeable(dictionary: dictionary)
         
     }
     

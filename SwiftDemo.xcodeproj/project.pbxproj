@@ -32,6 +32,7 @@
 		F44647A7220425A800D3BDD5 /* UserInfoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44647A6220425A800D3BDD5 /* UserInfoTableCell.swift */; };
 		F450961D225C6C74000359F0 /* GirdImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450961C225C6C74000359F0 /* GirdImageCell.swift */; };
 		F450961F225C995C000359F0 /* GirdImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450961E225C995C000359F0 /* GirdImageCollectionCell.swift */; };
+		F46D9908226EEC730082D484 /* QRCodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46D9907226EEC730082D484 /* QRCodeScanViewController.swift */; };
 		F4835956221299970001C0FE /* TokenRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4835955221299970001C0FE /* TokenRefresher.swift */; };
 		F483595C2212B2FB0001C0FE /* NetWorkBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483595B2212B2FB0001C0FE /* NetWorkBusinessViewController.swift */; };
 		F483595E2212B30D0001C0FE /* NetWorkBusnissViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483595D2212B30D0001C0FE /* NetWorkBusnissViewModel.swift */; };
@@ -50,6 +51,7 @@
 		F4A5E7412223E62A00EA0DC6 /* LPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5E7402223E62A00EA0DC6 /* LPickerCell.swift */; };
 		F4AB9A3D221D36EB00735765 /* EurekaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB9A3C221D36EB00735765 /* EurekaViewController.swift */; };
 		F4AB9A40221D550F00735765 /* JsonCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AB9A3F221D550F00735765 /* JsonCodeViewController.swift */; };
+		F4C2060B22703782001B013A /* QRCodeScanAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C2060A22703782001B013A /* QRCodeScanAnimation.swift */; };
 		F4E77CAC222E0490006D4426 /* WhereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E77CAB222E0490006D4426 /* WhereViewController.swift */; };
 		F4E77CB0222E6D6B006D4426 /* tttViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E77CAF222E6D6B006D4426 /* tttViewController.swift */; };
 		F4EAAD6A2211507D001A8EFB /* NetOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EAAD692211507D001A8EFB /* NetOperators.swift */; };
@@ -113,6 +115,7 @@
 		F44647A6220425A800D3BDD5 /* UserInfoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableCell.swift; sourceTree = "<group>"; };
 		F450961C225C6C74000359F0 /* GirdImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirdImageCell.swift; sourceTree = "<group>"; };
 		F450961E225C995C000359F0 /* GirdImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirdImageCollectionCell.swift; sourceTree = "<group>"; };
+		F46D9907226EEC730082D484 /* QRCodeScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanViewController.swift; sourceTree = "<group>"; };
 		F4835955221299970001C0FE /* TokenRefresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRefresher.swift; sourceTree = "<group>"; };
 		F483595B2212B2FB0001C0FE /* NetWorkBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkBusinessViewController.swift; sourceTree = "<group>"; };
 		F483595D2212B30D0001C0FE /* NetWorkBusnissViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkBusnissViewModel.swift; sourceTree = "<group>"; };
@@ -131,6 +134,7 @@
 		F4A5E7402223E62A00EA0DC6 /* LPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPickerCell.swift; sourceTree = "<group>"; };
 		F4AB9A3C221D36EB00735765 /* EurekaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaViewController.swift; sourceTree = "<group>"; };
 		F4AB9A3F221D550F00735765 /* JsonCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonCodeViewController.swift; sourceTree = "<group>"; };
+		F4C2060A22703782001B013A /* QRCodeScanAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanAnimation.swift; sourceTree = "<group>"; };
 		F4E77CAB222E0490006D4426 /* WhereViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereViewController.swift; sourceTree = "<group>"; };
 		F4E77CAF222E6D6B006D4426 /* tttViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tttViewController.swift; sourceTree = "<group>"; };
 		F4EAAD692211507D001A8EFB /* NetOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetOperators.swift; sourceTree = "<group>"; };
@@ -308,6 +312,7 @@
 		F444094721F8042E00BF8C01 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F46D9906226EEC4F0082D484 /* QRCodeScan */,
 				F40DD1412255ECCD006EC85C /* CustomEureka */,
 				F4E77CAA222E03CF006D4426 /* Where */,
 				F4AB9A3E221D54F100735765 /* Json */,
@@ -360,6 +365,15 @@
 				F44647A22203EB3600D3BDD5 /* UserBean.swift */,
 			);
 			path = Bean;
+			sourceTree = "<group>";
+		};
+		F46D9906226EEC4F0082D484 /* QRCodeScan */ = {
+			isa = PBXGroup;
+			children = (
+				F46D9907226EEC730082D484 /* QRCodeScanViewController.swift */,
+				F4C2060A22703782001B013A /* QRCodeScanAnimation.swift */,
+			);
+			path = QRCodeScan;
 			sourceTree = "<group>";
 		};
 		F48359572212B1FA0001C0FE /* NetWorkBusiness */ = {
@@ -776,6 +790,7 @@
 				F444094E21F80C0300BF8C01 /* LoginViewController.swift in Sources */,
 				F41A6A5F2202F82100D59A2C /* UserTableViewController.swift in Sources */,
 				F41A6A622202FA7300D59A2C /* UserService.swift in Sources */,
+				F46D9908226EEC730082D484 /* QRCodeScanViewController.swift in Sources */,
 				F4AB9A3D221D36EB00735765 /* EurekaViewController.swift in Sources */,
 				F41A6A592202F6C400D59A2C /* Operators.swift in Sources */,
 				F4A5E7412223E62A00EA0DC6 /* LPickerCell.swift in Sources */,
@@ -810,6 +825,7 @@
 				F4EAAD7022117ABB001A8EFB /* NetWorkError.swift in Sources */,
 				F4A5E736222392F800EA0DC6 /* LBaseCellType.swift in Sources */,
 				F483595E2212B30D0001C0FE /* NetWorkBusnissViewModel.swift in Sources */,
+				F4C2060B22703782001B013A /* QRCodeScanAnimation.swift in Sources */,
 				F4189C5621F5621800E07CF6 /* AppDelegate.swift in Sources */,
 				F41A6A652202FE3B00D59A2C /* IndexViewController.swift in Sources */,
 				F40DD14C2255F90A006EC85C /* GirdImageRow.swift in Sources */,
@@ -992,14 +1008,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4XDBZBU85;
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = PlenaLam.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1012,14 +1028,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D4XDBZBU85;
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = PlenaLam.SwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
