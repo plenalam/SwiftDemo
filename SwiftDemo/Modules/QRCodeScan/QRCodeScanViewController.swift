@@ -91,6 +91,9 @@ public class QRCodeScanViewController : UIViewController {
     
     
     func setUpFlashLight() {
+        if (device == nil ||  device!.hasFlash || device!.hasTorch){
+            return
+        }
         //手电筒
         view.addSubview(flashLightBtn)
         flashLightBtn.setTitle("手电筒:关", for: .normal)
@@ -264,6 +267,16 @@ extension QRCodeScanViewController : AVCaptureMetadataOutputObjectsDelegate{
             
           
         }
+    }
+    
+    public func detectImage(inputImage : UIImage) -> String{
+        let ciimage = CIImage(cgImage: inputImage.cgImage!)
+        let detector = CIDetector(ofType:CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy : CIDetectorAccuracyHigh])
+        let resultArry = detector!.features(in: ciimage)
+        guard let result = resultArry[0] as? CIQRCodeFeature else{
+            return ""
+        }
+        return  result.messageString ?? ""
     }
     
 }

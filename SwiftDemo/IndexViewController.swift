@@ -54,7 +54,12 @@ class IndexViewController : UIViewController,UITableViewDelegate,UITableViewData
             navigationController?.pushViewController(CustomEurekaViewController(), animated: true)
         case 8:
             let qrscanvc = QRCodeScanViewController();
-            navigationController?.pushViewController(QRCodeScanViewController(), animated: true)
+            qrscanvc.scanResultObservable.subscribe(onNext: {[weak self] (result) in
+               self?.showAlert(message: result)
+            }, onError: {[weak self] (error) in
+               self?.showAlert(message: error.localizedDescription)
+            })
+            navigationController?.pushViewController(qrscanvc, animated: true)
         default:
             break
         }
@@ -85,5 +90,15 @@ class IndexViewController : UIViewController,UITableViewDelegate,UITableViewData
             maker.top.leading.trailing.bottom.equalToSuperview()
         }
         indextableview.tableFooterView = UIView()
+    }
+    
+    private func showAlert(message:String){
+        let alertVC = UIAlertController(title: "Error", message: message, preferredStyle: .alert);
+        let alertAction = UIAlertAction(title: "Confirm", style: .default) { action in
+        }
+        alertVC.addAction(alertAction)
+        self.present(alertVC, animated: true, completion: {
+            
+        })
     }
 }
